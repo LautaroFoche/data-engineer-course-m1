@@ -7,3 +7,5 @@ df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
 
 print(df.head())
 print(f'month: {month}')
+
+df.to_parquet(f'output_{month}.parquet')
